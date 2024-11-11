@@ -2,63 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=hh, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header class="header">
+   <header>
+     <h1>Retha's dev-web</h1>
      <nav class="nav">
-      <h1>Retha's dev-web</h1>
-         <div class="menu">
-            <ul class="list">
-               <li><a href="link">cv</a></li>
-               <li><a href="link">projets</a></li>
-               <li><a href="link">contacts</a></li>
-            </ul>
-         </div>
+         <a href="cv.html">cv</a>
+         <a href="projets.html">projets</a>
+         <a href="contact.html">contact</a>
       </nav>
    </header>
-   <main class="main">
-      <div class="image">
-        <img src="img/IMG_1065.JPG" alt="photo de profil">
-      </div>
-      <div class="text">
-         <h2 id="titre"> HELLO</h2>
+   <main>
+    <section class="intro">
+        <img src="assets27/TFNF7959.JPG" alt="photo de profil"  class="profile-pic">
+      <div class="intro-content">
+         <h2> HELLO</h2>
         <h3>A propos de moi</h3>
-        <p>je suis retha Mtb,develpper fullstack <br>dynamique et passionnée de la decouverte</p>
-        <ul class="cercle">
-            <li><a href="cv.html">cv</a></li>
-            <li><a href="projets.html">projets</a></li>
-            <li><a href="contacts.html">contacts</a></li>
-        </ul>
+        <p class="about">je suis retha Mtb,developpeuse full-stack <br>je possède un curriculum vitae détaillé et une expérience professionnelle</p>
+        <div class="buttons">
+            <a href="cv.html"  class="button cv">cv</a>
+            <a href="projets.html"  class="button projects">projets</a>
+            <a href="contacts.html"  class="button contact">contact</a>
+         </div>
       </div>
+    </section>
    </main>
-   <footer class="footer">
-      <nav class="nav">
-         <div class="tel all">
-             <p><strong>telephone</strong></p>
-             <a href="tel: +243854872146">+243854872146</a>
-         </div>
-         <div class="email all">
-            <p><strong>email</strong></p>
-            <a href="email:rethambombo@gmail.com">rethambombo@gmail.com</a>
-         </div>
-         <div class="link">
-            <p><strong>suivez-moi</strong></p>
-         </div>
-         <div class="link">
-            <ul>
-               <li><a href="#">facebook</a></li>
-               <li><a href="#">instagram</a></li>
-               <li><a href="#">telegram</a></li>
-               <li><a href="#">tik-tok</a></li>
-            </ul>
-         </div>
-         <div class="copyright">
-            <p>copy, 2024 retha's dev-web. tous droit reservés</p>
-         </div>
-      </nav>
+   <footer>
+      <div class="contact-info">
+      <p><strong>telephone</strong></p>
+      <p>+243854872146</p>
+      </div>
+      <div class="contact-info">
+      <p><strong>email</strong></p>
+      <p>rethambombo@gmail.com</p>
+      </div>
+       <div class="contact-info">
+         <p><strong>suivez-moi</strong></p>
+            <p>
+               <a href="#"><i class="fa-brands fa-facebook"></i></a>
+               <a href=""><i class="fa-brands fa-instagram"></i></a>
+               <a href=""><i class="fa-brands fa-telegram"></i></a>
+               <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </p>
+       </div>
+      <div class="copyright">
+        &copy; 2024 by retha's dev-web.
+      </div>
    </footer>
 </body>
 </html>
