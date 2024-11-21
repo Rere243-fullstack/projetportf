@@ -8,14 +8,16 @@
     <title>Projets</title>
 </head>
 <body>
-    <header>
-        <h1>Retha's dev-web</h1>
-        <nav class="nav">
-            <a href="cv.html">cv</a>
-            <a href="projets.html">projets</a>
-            <a href="contact.html">contact</a>
-         </nav>
-      </header>
+   <header>
+      <nav class="navigation">
+         <div class="navigation__logo"><a href="#">Retha's dev-web</a></div>
+          <ul class="navigation__anchor-list">
+             <li class="navigation__anchor-list__anchor-list__anchor--border-right"><a href="cv.html">cv</a></li>
+             <li class="navigation__anchor-list__anchor-list__anchor--border-right"><a href="projets.html">projets</a></li>
+             <li class="navigation__anchor-list__anchor-list__anchor"><a href="contact.html">contact</a></li>
+          </ul>
+       </nav>
+    </header>
       <main>
         <h2>Mes projets</h2>
         <div class="projets-grid">
@@ -25,27 +27,23 @@
            <div class="projet-card">projets 4</div>
         </div>
       </main>
-    <footer>
-        <div class="contact-info">
-        <p><strong>telephone</strong></p>
-        <p>+243854872146</p>
-        </div>
-        <div class="contact-info">
-        <p><strong>email</strong></p>
-        <p>rethambombo@gmail.com</p>
-        </div>
-         <div class="contact-info">
-           <p><strong>suivez-moi</strong></p>
-              <p>
-                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                 <a href=""><i class="fa-brands fa-instagram"></i></a>
-                 <a href=""><i class="fa-brands fa-telegram"></i></a>
-                 <a href=""><i class="fa-brands fa-tiktok"></i></a>
-              </p>
-         </div>
-        <div class="copyright">
-          &copy; 2024 by retha's dev-web.
-        </div>
-     </footer> 
+      <footer class="main-section-padding-horizontal">
+         <ul class="footer-section-padding-horizontal-list">
+           <li class="footer-section-padding-horizontal-list-anchor"><strong>telephone</strong>
+               <a href="tel:+243854872146">+243854872146</a></li> 
+           <li class="footer-section-padding-horizontal-list-anchor"><strong>Email</strong>
+              <a href="mail:rethambombo@gmail.com">rethambombo@gmail.com</a></li>
+          <li class="footer-section-padding-horizontal-list-anchor"><strong>suivez-moi</strong>
+               <ul class="footer-list-anchor__anchor" >
+                  <li class="footer-list-anchor__anchor"><a href="/">facebook</a></li>
+                  <li class="footer-list-anchor__anchor"><a href="#">instagram</a></li>
+                  <li class="footer-list-anchor__anchor"><a href="#">telegram</a></li>
+                  <li class="footer-list-anchor__anchor"><a href="#">tik tok</a></li>
+               </ul>
+         <li class="copyright">
+           &copy; 2024 by retha's dev-web.
+         </li>
+         </ul>
+      </footer>
 </body>
 </html>

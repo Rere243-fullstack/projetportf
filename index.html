@@ -9,49 +9,51 @@
 </head>
 <body>
    <header>
-     <h1>Retha's dev-web</h1>
-     <nav class="nav">
-         <a href="cv.html">cv</a>
-         <a href="projets.html">projets</a>
-         <a href="contact.html">contact</a>
+     <nav class="navigation">
+        <div class="navigation__logo"><a href="#">Retha's dev-web</a></div>
+         <ul class="navigation__anchor-list">
+            <li class="navigation__anchor-list__anchor-list__anchor--border-right"><a href="cv.html">cv</a></li>
+            <li class="navigation__anchor-list__anchor-list__anchor--border-right"><a href="projets.html">projets</a></li>
+            <li class="navigation__anchor-list__anchor-list__anchor"><a href="contact.html">contact</a></li>
+         </ul>
       </nav>
    </header>
-   <main>
-    <section class="intro">
-        <img src="assets27/TFNF7959.JPG" alt="photo de profil"  class="profile-pic">
-      <div class="intro-content">
-         <h2> HELLO</h2>
-        <h3>A propos de moi</h3>
-        <p class="about">je suis retha Mtb,developpeuse full-stack <br>je possède un curriculum vitae détaillé et une expérience professionnelle</p>
-        <div class="buttons">
-            <a href="cv.html"  class="button cv">cv</a>
-            <a href="projets.html"  class="button projects">projets</a>
-            <a href="contacts.html"  class="button contact">contact</a>
+   <main class="main-section-padding-horizontal">
+    <section class="description">
+      <div class="description__profile">
+        <img src="assets27/TFNF7959.JPG" alt="photo de profile"  srcset="">
+        </div>
+      <div class="description__details">
+         <h1 class="description__details__title"> HELLO</h1>
+         <div class="description__details__resumer">
+              <strong>A propos de moi</strong>
+              <p class="about">je suis retha Mtb,developpeuse full-stack <br>je possède un curriculum vitae détaillé et une expérience professionnelle</p>
          </div>
+         <ul class="description__details__anchor-list">
+            <li class="description__details__anchor-list-anchor"><a href="cv.html">cv</a></li>
+            <li class="description__details__anchor-list-anchor"><a href="projets.html">projets</a></li>
+            <li class="description__details__anchor-list-anchor"><a href="contacts.html">contact</a></li>
+         </ul>
       </div>
     </section>
    </main>
-   <footer>
-      <div class="contact-info">
-      <p><strong>telephone</strong></p>
-      <p>+243854872146</p>
-      </div>
-      <div class="contact-info">
-      <p><strong>email</strong></p>
-      <p>rethambombo@gmail.com</p>
-      </div>
-       <div class="contact-info">
-         <p><strong>suivez-moi</strong></p>
-            <p>
-               <a href="#"><i class="fa-brands fa-facebook"></i></a>
-               <a href=""><i class="fa-brands fa-instagram"></i></a>
-               <a href=""><i class="fa-brands fa-telegram"></i></a>
-               <a href=""><i class="fa-brands fa-tiktok"></i></a>
-            </p>
-       </div>
-      <div class="copyright">
+   <footer class="main-section-padding-horizontal">
+      <ul class="footer-section-padding-horizontal-list">
+        <li class="footer-section-padding-horizontal-list-anchor"><strong>telephone</strong>
+            <a href="tel:+243854872146">+243854872146</a></li> 
+        <li class="footer-section-padding-horizontal-list-anchor"><strong>Email</strong>
+           <a href="mail:rethambombo@gmail.com">rethambombo@gmail.com</a></li>
+       <li class="footer-section-padding-horizontal-list-anchor"><strong>suivez-moi</strong>
+            <ul class="footer-list-anchor__anchor" >
+               <li class="footer-list-anchor__anchor"><a href="/">facebook</a></li>
+               <li class="footer-list-anchor__anchor"><a href="#">instagram</a></li>
+               <li class="footer-list-anchor__anchor"><a href="#">telegram</a></li>
+               <li class="footer-list-anchor__anchor"><a href="#">tik tok</a></li>
+            </ul>
+      <li class="copyright">
         &copy; 2024 by retha's dev-web.
-      </div>
+      </li>
+      </ul>
    </footer>
 </body>
 </html>
