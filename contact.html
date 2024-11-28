@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>contacts</title>
 </head>
 <body>
@@ -18,39 +18,43 @@
         </ul>
      </nav>
   </header>
-     <main>
-        <section class="contact-info">
-            <h2>Contact</h2>
-            <p><strong>Téléphone :</strong>+243 854 872 146</p>
-            <p><strong>Email :</strong>rethambombo@gmail.com</p>
-        </section>
-        <section class="contact-form">
-         <form action="#">
-          <div>
+  <main class="main-section-padding-horizontal">
+    <section>
+       <div class="main__details">
+          <h2 class="main__details-title">Contact</h2>
+          <ul class="main__details-list">
+            <li class="main__details-list-anchor"><strong>telephone</strong>
+              <a href="tel:+243854872146">+243854872146</a></li> 
+            <li class="main__details-list-anchor"><strong>Email</strong>
+              <a href="mail:rethambombo@gmail.com">rethambombo@gmail.com</a></li>
+          </ul>
+        </div>
+       <form class="contact__form">
+          <div class="contact__form-group">
             <label for="first-name">Name</label>
             <input type="text" id="first-name" name="first-name">
           </div>
-          <div>
+          <div class="contact__form-group">
             <label for="last-name">Last Name</label>
             <input type="text" id="last-name" name="last-name">
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+          <div class="contact__form-group">
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email">
+         </div>
+         <div class="contact__form-group">
+             <label for="Subject">Subject</label>
+             <input type="text" id="subject" name="subject">
           </div>
-          <div>
-            <label for="Subject">Subject</label>
-            <input type="text" id="subject" name="subject">
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message"></textarea>
+          <div class="contact__form-group">
+             <label for="message">Message</label>
+             <textarea id="message" name="message" rows="4"></textarea>
           </div>
           <button type="submit"  class="send-button">Envoyer</button>
-         </form>
-        </section>
-     </main> 
-     <footer class="main-section-padding-horizontal">
+        </form>
+      </section>
+  </main> 
+  <footer class="main-section-padding-horizontal">
       <ul class="footer-section-padding-horizontal-list">
         <li class="footer-section-padding-horizontal-list-anchor"><strong>telephone</strong>
             <a href="tel:+243854872146">+243854872146</a></li> 

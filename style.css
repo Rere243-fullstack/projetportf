@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     height:100vh;
     display: flex;
@@ -28,14 +32,19 @@ li{
 }
 .description__profile{
     width: 30%;
-
 }
-
+.profile{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 .description__details{
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
     width: 35%;
     gap: 1.5em;
+
 }
 .main-section-padding-horizontal{
     padding: 0 15%;
@@ -45,241 +54,91 @@ li{
     justify-content: space-between;
     align-items: center;
 }
+.main__details-title{
+    font-size: 16px;
+}
+.description__details-about{
+    font-size: ;
+}
+.main__details-list{
+    display: block;
+    align-items: center;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+}
+.description__details__anchor-list-anchor-cv{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    background-color: rgb(255,196,0);
+    margin: 10px;
+}
+.description__details__anchor-list-anchor-projets{
+    width: 100px;
+    height: 100px;
+    border-radius:100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(232,87,87);
+    margin:10px
+}
+.description__details__anchor-list-anchor-contact{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0,179,225);
+    margin:10px;
+}
 .footer-section-padding-horizontal-list{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px;
 }
 .footer-list-anchor{
     display: flex;
     gap:1rem;
     align-items: center;
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*{
-    margin : 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#333;
-}
- header{
-    text-align: right;
-    padding: 20px;
-}
-nav a{
-    margin:0 10px;
-    text-decoration: none;
-    color: #333;
-}
-h1{
-    font-size: 2em;
-    text-align: left;
-}
-/*fin de la partie header*/
-/* la partie main*/
-/*main{
+.footer-list-anchor__anchor{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    gap :2rem;
+    padding: 5px;
+    justify-content: space-between;
 }
-.intro{
-    display: flex;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    gap:20px;
-    padding-top: 20px; /* pour ajuster l'espace vertical*/
-/*}
-/*.profile-pic{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    flex-shrink: 0; /*empeche l'image de se redimensionner*/
-  /*  align-self: flex-start; /*pour aligner le haut de la photo avec le texte*/
-/*}
-/*.intro-content{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center; /*pour centrer le texte verticalement*/
-/*}
-h3{
-    font-size: 16px;
-    margin: 0;
-}
-h2{
-    font-size: 2em;
-    margin-top: 10px;
-}
-.about{
-    font-size: 1.1em;
-    line-height: 1.5;
-}
-.buttons{
-    display: flex;
-    gap:10px;
-}*/
-/*.button{
-    width: 100px; /*taille du cercle*/
-  /*  height: 100px; /*taile du texte*/
-  /*  display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100%;/*rend le bouton circulaire*/
-  /*  border:  1px solid #000; /*contour noir*/
-   /* color: hwb(0 5% 95%); /*couleur du texte*/
- /*   text-decoration: none;
-  /**  font-size: 0.9em;/*taille du texte*/
-  /*  font-weight: bold;
- /   text-align: center;/*centre le texte*/
-/*}**/
-/*.cv{
-    background-color: #ffcc00;
-}
-.projects{
-    background-color: #e04138;
-}
-.contact{
-    background-color: #36a8c5;
-    
-}
-#projets{
-    margin-bottom: 40px;
-}
-.projects-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap:20px;
-}
-.project-grid{
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-.contact-form{
-    width: 60%;
-    margin: 20px auto;
-}
-.contact-form form{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-}
-.contact-form label{
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 0.9em;
-}
-.contact-form input[type="text"]
-.contact-form input[type="email"]
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1em;
-}
-.contact-form textarea{
-    grid-column: span 2;
-    resize: vertical;
-    height: 100px;
-}
-.contact-form .send-button{
-    grid-column: span 2;
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    color: black;
-    font-size: 1em;
-    font-weight: bold;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
-.contact-form .send-button:hover{
-    background-color: #e6b800;
-}
-.contact-form div{
-    display: flex;
-    flex-direction: column;
-}
-/*partie footer*/
-/*footer{
-    display: flex;
-    justify-content: space-between;/*espace égal entre les éléments*/
-   /* align-items: center;/* aligner les éléments verticalement*/
-  /*  padding: 20px;
-  /*  background-color: #f9f9f9;
-    border-top: 1px solid #ccc;/*ligne de séparation en haut du footer*/
-/*}
-.contact-info{
-    text-align: center; /*centre le texte à l'intérieur de chaque bloc*/
-/*}
-.contact-info p{
-    margin:5px 0;/*espace entre les lignes de texte*/
-/*}
 .copyright{
-    text-align: right;
-    font-size: 0.9em;
-    color:#888; /*couleur du texte*/
-/*}
-/*responsive*/
-/*@media (max-width: 768px) {
-    header{
-        flex-direction: column;
-        text-align: center;
-    }
-    nav a{ 
-        flex-direction: column;
-        gap:10px;
-    }
-    .project-grid{
-        grid-template-columns: 1fr;
-    }
-    .contact-form{
-        width: 100%;
-        padding:0 20px
-    }
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
 }
-@media(max-width:480px){
-    header{
-        font-size: 1.2em;
-    }
-    nav a{
-        font-size: 0.9em;
-    }
-    .project-grid{
-        padding:15px;
-    }
-    .send-button{
-        padding: 8px 16px;
-    }
-}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
