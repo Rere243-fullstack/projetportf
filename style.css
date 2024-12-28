@@ -58,7 +58,7 @@ li{
     font-size: 16px;
 }
 .description__details-about{
-    font-size: ;
+    font-size: 16px;
 }
 .main__details-list{
     display: block;
@@ -120,6 +120,21 @@ li{
     display: flex;
     padding: 5px;
     justify-content: space-between;
+}
+/* main pour la page cv*/
+.main__details-title-h2{
+margin-bottom: 20px;
+}
+.main__details1{
+    display: flex;
+    justify-content: space-between;
+}
+.main__details2{
+    display: flex;
+    justify-content: space-between;
+}
+.main__details-list{
+    list-style-type: disc;
 }
 
 
